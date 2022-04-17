@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto+Slab:wght@300;400;500;700;900&family=Source+Sans+Pro:wght@300;400;600;700&display=swap");
+
+/* Fonts */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto Slab", serif;
+}
+
+p,
+span {
+  font-family: "Lato", "Source Sans Pro", sans-serif;
+}
+
+:root {
+  --metallic-gold: #ad8848;
+  --light-beige: #c0a069;
+  --nickel: #767d7d;
+  --dark-blue: #102b3f;
+  --dark-green: #062726;
+  --Eerie-Black: #222222;
+  --red: #ff1616;
+  --black: #000000;
+  --white: #ffffff;
+}

@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto+Slab:wght@300;400;500;700;900&family=Source+Sans+Pro:wght@300;400;600;700&display=swap");
+
+/* Fonts */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto Slab", serif;
+}
+
+p,
+span {
+  font-family: "Lato", "Source Sans Pro", sans-serif;
+}
+
+:root {
+  --metallic-gold: #ad8848;
+  --light-beige: #c0a069;
+  --nickel: #767d7d;
+  --dark-blue: #102b3f;
+  --dark-green: #062726;
+  --Eerie-Black: #222222;
+  --red: #ff1616;
+  --black: #000000;
+  --white: #ffffff;
+}
+
+.container {
+  width: 90vw;
+  display: flex;
+}
+
+.panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+  border-radius: 25px;
+  color: var(--white);
+  cursor: pointer;
+  overflow: hidden;
+  padding: 1.5rem;
+  margin: 10px;
+  position: relative;
+  transition: flex 0.7s ease-in-out;
+}
+
+.panel h3 {
+  position: absolute;
+  font-size: 1.5rem;
+  bottom: 40px;
+  left: 40px;
+  margin: 0;
+  opacity: 0;
+  padding: 0.2rem;
+  /* width: 3.8rem;
+  background-color: #767d7d;
+  background-size: cover;
+  padding: 1px; */
+}
+
+.panel.active {
+  flex: 5;
+  background-size: cover;
+  padding: 1rem;
+  border-radius: 25px;
+}
+
+.panel.active h3 {
+  opacity: 1;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+    display: none;
+  }
+}
